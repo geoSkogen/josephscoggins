@@ -69,6 +69,7 @@ a:active {
   z-index: 5;
   width: 100%;
   top: 0%;
+  //border: 1px solid yellow;
 }
 
 header {
@@ -78,6 +79,7 @@ header {
   margin: 0;
   color:rgb(191, 191, 226);
   background-color:rgba(26,26,26,0.25);
+  //border: 1px solid blue;
 }
 
 span.title {
@@ -96,6 +98,7 @@ div.title {
   letter-spacing: 4px;
   margin: 0.6%;
   opacity: 0.45;
+  //border: 1px solid red;
 }
 
 p.punc {
@@ -161,6 +164,7 @@ dl {
   padding-top: 1.5em;
   margin: 0;
   position: relative;
+  z-index: 6;
 }
 
 dl dt {
