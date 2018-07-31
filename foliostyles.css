@@ -114,8 +114,8 @@ div.frame {
   background-image: url(images/ice_skew_resize_rotate_360.jpg);
   width: 360px;
   height: 725px;
-  margin-top:0em;
-  padding:0;
+  margin-top: 0;
+  padding: 0;
   font-size: 20px;
   font-family: "Trebuchet MS", Helvetica, Arial, sans-serif;
   position: relative;
@@ -161,10 +161,10 @@ div.nav {
 }
 
 dl {
-  padding-top: 1.5em;
+  padding-top: 1.75em;
   margin: 0;
   position: relative;
-  z-index: 6;
+  z-index: 4;
 }
 
 dl dt {
@@ -182,7 +182,7 @@ dl dt:hover {
 
 @media only screen and (min-width: 520px) {
   dl {
-    padding-top: 1.75em;
+    padding-top: 2em;
   }
 
   dl dt {
@@ -194,7 +194,7 @@ dl dt:hover {
 
 @media only screen and (min-width: 920px) {
   dl {
-    padding-top: 2em;
+    padding-top: 2.25em;
     margin-left: 3em;
   }
 }
