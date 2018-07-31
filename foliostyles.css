@@ -24,13 +24,18 @@ a:active {
 }
 
 .flexOuter,
-.flexOuterColumn {
+.flexOuterColumn,
+.flexOuterCenter {
   display: flex;
   flex-flow: row wrap;
 }
 
 .flexOuter {
   justify-content: flex-start;
+}
+
+.flexOuterCenter {
+  justify-content: center;
 }
 
 .flexOuterColumn {
@@ -61,7 +66,7 @@ a:active {
 
 .fixBarShell {
   position: fixed;
-  z-index: 10;
+  z-index: 5;
   width: 100%;
   top: 0%;
 }
@@ -106,7 +111,7 @@ div.frame {
   background-image: url(images/ice_skew_resize_rotate_360.jpg);
   width: 360px;
   height: 725px;
-  margin-top:0;
+  margin-top:0em;
   padding:0;
   font-size: 20px;
   font-family: "Trebuchet MS", Helvetica, Arial, sans-serif;
@@ -196,26 +201,46 @@ div.clearDiv {
   float: left;
 }
 
-div.relShell {
-  height: 100%;
-  width: 25%;
-  padding-top: 10%;
-  position: relative
+div.absShell {
+  position: absolute;
+  top: 9%;
+  left: 30%;
+  width: 220px;
+  height: 846px;
+  z-index: 6;
+}
 
+@media only screen and (min-width: 520px) {
+  div.absShell {
+    top: 15%;
+    left: 50%;
+  }
+}
+
+@media only screen and (min-width: 920px) {
+  div.absShell {
+    top: 12%;
+    left: 65%;
+  }
+}
+
+div.relShell {
+  position: relative;
 }
 
 div.relCard {
-  margin: 0 1% 0 1%;
   width: 214px;
   height: 179px;
   opacity: 0.65;
+  //border: 3px solid green;
+  position: absolute;
 }
 
 #chromathagraphic { top: 10%; }
-#lotuseaters { top: 10%; }
-#book-of-change { top: 10%; }
-#elasticacres { top: 10%; }
-#integer { top: 10%; }
-#syllablemill { top: 10%; }
-#annunciator { top: 10%; }
-#jsnotebook { top: 10%; }
+#lotuseaters { top: 20%; }
+#book-of-change { top: 30%; }
+#elasticacres { top: 40%; }
+#integer { top: 50%; }
+#syllablemill { top: 60%; }
+#annunciator { top: 70%; }
+#jsnotebook { top: 80%; }

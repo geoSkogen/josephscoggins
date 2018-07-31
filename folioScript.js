@@ -13,13 +13,11 @@ function initFuncs() {
   }
 
   function createImage(card, callNo) {
-    var newImg = document.createElement("img");
-    var newPath = card.id + ".jpg";
-    newImg.setAttribute("src", "images/" + newPath);
-    card.appendChild(newImg);
+    var filename = card.id
+    card.style.background = "url(images/" + filename + ".jpg);"
   }
 
   function removeImage(card, callNo) {
-    card.innerHTML = "";
+    card.style.background = "initial"
   }
 }
