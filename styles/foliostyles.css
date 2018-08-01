@@ -229,7 +229,7 @@ div.clearDiv {
   float: left;
 }
 
-div.absShell {
+.absShell {
   position: absolute;
   top: 0%;
   left: 124px;
@@ -242,13 +242,13 @@ div.absShell {
 }
 
 @media only screen and (min-width: 520px) {
-  div.absShell {
+  .absShell {
     left: 440px;
   }
 }
 
 @media only screen and (min-width: 920px) {
-  div.absShell {
+  .absShell {
     //top: 4em;
     left: 60%;
   }
