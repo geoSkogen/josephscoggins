@@ -163,8 +163,11 @@ div.nav {
   font-size: 28px;
   font-weight: 450;
   width: 100%;
-  margin: 0 0 0 1em;
+  margin: 0 0 0 0;
   padding: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
 }
 
 a { }
@@ -192,6 +195,7 @@ dl dt:hover {
 @media only screen and (min-width: 520px) {
   dl {
     margin-top: 2.25em;
+    margin-left: 1em;
   }
 
   dl dt {
@@ -211,6 +215,11 @@ dl dt:hover {
 
   dl dt {
     padding: 0.5em 0.5em 0.5em 1.5em;
+    text-align: center;
+  }
+
+  div.nav {
+    display: block;
   }
 }
 
@@ -222,8 +231,8 @@ div.clearDiv {
 
 div.absShell {
   position: absolute;
-  top: 27em;
-  left: 100px;
+  top: 0%;
+  left: 124px;
   width: 214px;
   height: 179px;
   opacity: 0.65;
@@ -234,47 +243,81 @@ div.absShell {
 
 @media only screen and (min-width: 520px) {
   div.absShell {
-    top: 3.5em;
-    left: 50%;
+    left: 440px;
   }
 }
 
 @media only screen and (min-width: 920px) {
   div.absShell {
-    top: 4em;
+    //top: 4em;
     left: 60%;
   }
 }
 
 #chromathagraphic {
-  top: 10%;
+  top: 80%;
   background-image: url(../images/chromathagraphic.jpg);
 }
 #lotuseaters {
-  top: 20%;
+  top: 70%;
   background-image: url(../images/lotuseaters.jpg);
 }
 #book-of-change {
-  top: 30%;
+  top: 60%;
   background-image: url(../images/book-of-change.jpg);
 }
 #elasticacres {
-  top: 40%;
+  top: 50%;
   background-image: url(../images/elasticacres.jpg);
  }
 #integer {
-  top: 50%;
+  top: 40%;
   background-image: url(../images/integer.jpg);
  }
 #syllablemill {
-  top: 60%;
+  top: 30%;
   background-image: url(../images/syllablemill.jpg);
  }
 #annunciator {
-  top: 70%;
+  top: 20%;
   background-image: url(../images/annunciator.jpg);
 }
 #jsnotebook {
-  top: 80%;
+  top: 10%;
   background-image: url(../images/jsnotebook.jpg);
+}
+
+@media only screen and (min-width: 520px) {
+  #chromathagraphic {
+    top: 10%;
+    background-image: url(../images/chromathagraphic.jpg);
+  }
+  #lotuseaters {
+    top: 20%;
+    background-image: url(../images/lotuseaters.jpg);
+  }
+  #book-of-change {
+    top: 30%;
+    background-image: url(../images/book-of-change.jpg);
+  }
+  #elasticacres {
+    top: 40%;
+    background-image: url(../images/elasticacres.jpg);
+   }
+  #integer {
+    top: 50%;
+    background-image: url(../images/integer.jpg);
+   }
+  #syllablemill {
+    top: 60%;
+    background-image: url(../images/syllablemill.jpg);
+   }
+  #annunciator {
+    top: 70%;
+    background-image: url(../images/annunciator.jpg);
+  }
+  #jsnotebook {
+    top: 80%;
+    background-image: url(../images/jsnotebook.jpg);
+  }
 }
