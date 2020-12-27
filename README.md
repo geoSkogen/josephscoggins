@@ -1,2 +1,2 @@
 # josephscoggins
-web development portfolio, June 2014 to Present
+web development portfolio, June 2014 to 2018
