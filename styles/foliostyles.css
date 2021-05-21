@@ -1,6 +1,5 @@
 body {
   background-color: rgb(206, 191, 226);
-  //font-family:
 }
 
 a:link {
@@ -52,11 +51,12 @@ a:active {
   background: url(../images/ice_skew_resize_rotate_420.jpg);
   width: 420px;
   height: 846px;
+  margin-left: -20px;
 }
 
-@media only screen and (min-width: 520px) {
+@media only screen and (min-width: 420px) {
   #backdrop {
-    background: url(../images/ice_skew_resize_rotate_832.jpg);
+    background: url(../images/ice_skew_resize_rotate_832_crop.jpg);
     height: 1673px;
     width: 832px;
   }
@@ -64,17 +64,44 @@ a:active {
 
 @media only screen and (min-width: 920px) {
   #backdrop {
-    background: url(../images/ice_skew_resize_14.jpg);
+    background: url(../images/ice_skew_1400_640.jpg);
     height: 642px;
     width: 1400px;
+  }
+}
+
+@media only screen and (min-width: 1020px) and (min-height: 760px) {
+  /*custom solution for standard tablet landscape and large table portrait*/
+  #backdrop {
+    background: url(../images/ice_skew_rotate_1200.jpg);
+    height: 2295px;
+    width: 1200px;
+  }
+}
+
+@media only screen and (min-width: 1360px) and (min-height: 1020px) {
+  /*custom solution for large tablet landscape*/
+  #backdrop {
+    background: url(../images/ice_skew_2000_1040.jpg);
+    height: 1040px;
+    width: 2000px;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  #backdrop {
+    background: url(../images/ice_skew_2000_905.jpg);
+    height: 920px;
+    width: 2000px;
   }
 }
 
 .fixBarShell {
   position: fixed;
   z-index: 6;
-  width: 100%;
+  width: 110%;
   top: 0%;
+  right: -10px;
   //border: 1px solid yellow;
 }
 
@@ -105,6 +132,7 @@ div.title {
   margin: 0.6%;
   opacity: 0.45;
   //border: 1px solid red;
+  padding-left: 1.5em;
 }
 
 p.punc {
@@ -117,7 +145,7 @@ p.punc {
 }
 
 div.frame {
-  background-image: url(../images/ice_skew_resize_rotate_360.jpg);
+  background-image: url(../images/ice_skew_resize_rotate_420.jpg);
   width: 360px;
   height: 725px;
   margin-top: 0;
@@ -130,19 +158,40 @@ div.frame {
 
 @media only screen and (min-width: 520px) {
   div.frame {
-    background-image: url(../images/ice_skew_resize_rotate_520.jpg);
-    width: 520px;
+    background-image: url(../images/ice_skew_resize_rotate_540.jpg);
+    width: 540px;
     height: 1050px;
   }
 
-  .flexOuter {
+  .flexOuter#menu-shell{
     padding-left: 1em;
+  }
+
+  div.title {
+    padding-left:2em;
+  }
+}
+
+@media only screen and (min-width: 760px) {
+  div.frame {
+    //background-image: url(../images/ice_skew_resize_rotate_540.jpg);
+    background:transparent;
+    width: 540px;
+    height: 1050px;
+  }
+
+  .flexOuter#menu-shell{
+    padding-left: 1em;
+  }
+
+  div.title {
+    padding-left: 4em;
   }
 }
 
 @media only screen and (min-width: 920px) {
   div.frame {
-    background-image: url(../images/ice_skew_resize.jpg);
+    background-image: url(../images/ice_skew_1400_640.jpg);
     width: 1300px;
     height: 597px;
   }
@@ -154,6 +203,33 @@ div.frame {
 
   div.title {
     text-align: center;
+  }
+}
+
+@media only screen and (min-width: 1020px) and (min-height: 760px) {
+  /*custom solution for standard tablet landscape and large table portrait*/
+  div.frame {
+    background: url(../images/ice_skew_rotate_1200.jpg);
+    height: 2295px;
+    width: 1200px;
+  }
+}
+
+@media only screen and (min-width: 1360px) and (min-height: 1020px) {
+  /*custom solution for large tablet landscape*/
+  div.frame {
+    background: url(../images/ice_skew_2000_1040.jpg);
+    height: 1040px;
+    width: 2000px;
+  }
+}
+
+
+@media only screen and (min-width: 1400px) {
+  div.frame {
+    background-image: url(../images/ice_skew_2000_905.jpg);
+    width: 2000px;
+    height: 920px;
   }
 }
 
@@ -201,9 +277,6 @@ dl dt:hover {
 
   dl dt {
 
-  }
-  div.title {
-    padding-left: 1em;
   }
 }
 
