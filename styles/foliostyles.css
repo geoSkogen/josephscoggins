@@ -51,7 +51,7 @@ a:active {
   background: url(../images/ice_skew_resize_rotate_420.jpg);
   width: 420px;
   height: 846px;
-  margin-left: -20px;
+  //margin-left: -20px;
 }
 
 @media only screen and (min-width: 420px) {
@@ -133,6 +133,17 @@ div.title {
   opacity: 0.45;
   //border: 1px solid red;
   padding-left: 1.5em;
+}
+
+div.title#subtitle2,div.title#subtitle1 {
+  background-color:rgba(26,26,26,0.25);
+  margin-top: 1em;
+}
+
+@media only screen and (min-width: 1200px) {
+  div.title#subtitle1 {
+    margin-top: 2.75em;
+  }
 }
 
 p.punc {
@@ -307,8 +318,8 @@ div.clearDiv {
   position: absolute;
   top: 0%;
   left: 124px;
-  width: 214px;
-  height: 179px;
+  width: 220px;
+  height: 180px;
   opacity: 0.65;
   z-index: 6;
   display: none;
@@ -328,70 +339,70 @@ div.clearDiv {
   }
 }
 
-#chromathagraphic {
+#book-of-changes {
   top: 80%;
-  background-image: url(../images/chromathagraphic.jpg);
+  background-image: url(../images/previews/book-of-changes.jpg);
 }
-#lotuseaters {
+#set {
   top: 70%;
-  background-image: url(../images/lotuseaters.jpg);
+  background-image: url(../images/previews/set.jpg);
 }
-#book-of-change {
+#chromathagraphic {
   top: 60%;
-  background-image: url(../images/book-of-change.jpg);
+  background-image: url(../images/previews/chromathagraphic.jpg);
 }
-#elasticacres {
+#in-unicode-out {
   top: 50%;
-  background-image: url(../images/elasticacres.jpg);
+  background-image: url(../images/previews/in-unicode-out.jpg);
  }
-#integer {
+#bl-api-client {
   top: 40%;
-  background-image: url(../images/integer.jpg);
+  background-image: url(../images/previews/bl-api-client.jpg);
  }
-#syllablemill {
+#equips {
   top: 30%;
-  background-image: url(../images/syllablemill.jpg);
+  background-image: url(../images/previews/equips.jpg);
  }
-#annunciator {
+#wp-citysnail {
   top: 20%;
-  background-image: url(../images/annunciator.jpg);
+  background-image: url(../images/previews/wp-citysnail.jpg);
 }
 #jsnotebook {
   top: 10%;
-  background-image: url(../images/jsnotebook.jpg);
+  background-image: url(../images/previews/jsnotebook.jpg);
 }
 
 @media only screen and (min-width: 520px) {
-  #chromathagraphic {
+  #book-of-changes {
     top: 10%;
-    background-image: url(../images/chromathagraphic.jpg);
+    background-image: url(../images/previews/book-of-changes.jpg);
   }
-  #lotuseaters {
+  #set {
     top: 20%;
-    background-image: url(../images/lotuseaters.jpg);
+    background-image: url(../images/previews/set.jpg);
   }
-  #book-of-change {
+  #chromathagraphic {
     top: 30%;
-    background-image: url(../images/book-of-change.jpg);
+    background-image: url(../images/previews/chromathagraphic.jpg);
   }
-  #elasticacres {
+  #in-unicode-out {
     top: 40%;
-    background-image: url(../images/elasticacres.jpg);
+    background-image: url(../images/previews/in-unicode-out.jpg);
    }
-  #integer {
+  #bl-api-client {
     top: 50%;
-    background-image: url(../images/integer.jpg);
+    background-image: url(../images/previews/bl-api-client.jpg);
    }
-  #syllablemill {
+  #equips {
     top: 60%;
-    background-image: url(../images/syllablemill.jpg);
+    background-image: url(../images/previews/equips.jpg);
    }
-  #annunciator {
+  #wp-citysnail {
     top: 70%;
-    background-image: url(../images/annunciator.jpg);
+    background-image: url(../images/previews/wp-citysnail.jpg);
   }
   #jsnotebook {
     top: 80%;
-    background-image: url(../images/jsnotebook.jpg);
+    background-image: url(../images/previews/jsnotebook.jpg);
   }
 }
